@@ -14,7 +14,28 @@
                         </div>
                     @endif
 
-                    You are logged in!
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Topic</th>
+                                <th>Date</th>
+                                <th>Replies</th>
+                                <th>Last Reply</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($topics as $topic)
+                                <tr>
+                                    <td>{{ $topic->title }}</td>
+                                    <td>{{ $topic->created_at }}</td>
+                                    <td>stubbed</td>
+                                    <td>stubbed</td>
+                                </tr>
+                            @endforeach
+
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
