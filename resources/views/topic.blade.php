@@ -14,12 +14,8 @@
             </ol>
 
             <div class="panel panel-default">
-
                 <div class="panel-heading">Posted {{ $topic->created_at->toDayDateTimeString() }}</div>
-
-                <div class="panel-body">
-                    {{ $topic->body }}
-                </div>
+                <div class="panel-body">{{ $topic->body }}</div>
                 <div class="panel-footer text-right">
                     <i class="fa fa-user" aria-hidden="true"></i> {{ $topic->author->name }}
                 </div>

@@ -19,7 +19,7 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Topic</th>
+                                <th><i class="fa fa-th-list" aria-hidden="true"></i> Topic</th>
                                 <th><i class="fa fa-user" aria-hidden="true"></i> Author</th>
                                 <th><i class="fa fa-calendar" aria-hidden="true"></i> Date</th>
                                 <th><i class="fa fa-comments" aria-hidden="true"></i> Replies</th>
