@@ -22,7 +22,7 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $topics = Topic::paginate(10);
+        $topics = Topic::paginate(15);
 
         return view('home', compact('topics'));
     }
@@ -37,7 +37,7 @@ class HomeController extends Controller
             'user_id'  => Auth::user()->id,
             'body'     => $request->body,
         ]);
-        $request->session()->flash('status', 'Reply sent!');
+        $request->session()->flash('status', 'Reply was sent!');
 
         return view('topic', compact('topic'));
     }
