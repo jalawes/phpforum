@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home/{topic}', 'HomeController@show')->name('topic');
+Route::post('/home/{topic}', 'HomeController@store')->name('reply');

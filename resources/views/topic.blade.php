@@ -30,15 +30,16 @@
                 </div>
             @endforeach
 
-
-            <h2>Reply</h2>
-
-            <div class="form-group">
-                <textarea name="reply" id="reply" cols="30" rows="5" class="form-control"></textarea>
-            </div>
-            <div class="text-right">
-                <button class="btn btn-default">Submit</button>
-            </div>
+            <form action="/home/{{ $topic->id }}/" method="POST">
+                {{ csrf_field() }}
+                <h2>Reply</h2>
+                <div class="form-group">
+                    <textarea name="body" id="reply" cols="30" rows="5" class="form-control"></textarea>
+                </div>
+                <div class="text-right">
+                    <button class="btn btn-default" type="submit">Submit</button>
+                </div>
+            </form>
 
         </div>
     </div>
