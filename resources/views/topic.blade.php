@@ -7,15 +7,11 @@
         <div class="col-md-12">
 
             <h1>{{ $topic->title }}</h1>
-            <div class="row">
-                <ol class="breadcrumb">
-                    <li>
-                        <a href="/home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                    <li class="active">
-                        {{ $topic->title }}
-                    </li>
-                </ol>
-            </div>
+            <ol class="breadcrumb">
+                <li>
+                <a href="/home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li class="active">{{ $topic->title }}</li>
+            </ol>
 
             <div class="panel panel-default">
 

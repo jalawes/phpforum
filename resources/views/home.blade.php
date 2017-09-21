@@ -5,11 +5,9 @@
     <div class="row">
         <div class="col-md-12 ">
             <h1>Topic List</h1>
-            <div class="row">
-                <ol class="breadcrumb">
-                    <li class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</li>
-                </ol>
-            </div>
+            <ol class="breadcrumb">
+                <li class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</li>
+            </ol>
             <div class="panel panel-default">
                 <div class="panel-body">
                     @if (session('status'))
