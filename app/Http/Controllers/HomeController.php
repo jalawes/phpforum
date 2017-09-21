@@ -28,4 +28,9 @@ class HomeController extends Controller
 
         return view('home', compact('topics'));
     }
+
+    public function show(Topic $topic)
+    {
+        return view('topic', compact('topic'));
+    }
 }
