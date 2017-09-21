@@ -18,6 +18,7 @@
                         <thead>
                             <tr>
                                 <th>Topic</th>
+                                <th>Author</th>
                                 <th>Date</th>
                                 <th>Replies</th>
                                 <th>Last Reply</th>
@@ -27,6 +28,7 @@
                             @foreach($topics as $topic)
                                 <tr>
                                     <td><a href="/home/{{ $topic->id }}">{{ $topic->title }}</a></td>
+                                    <td>{{ $topic->author->name }}</td>
                                     <td>{{ $topic->created_at->toFormattedDateString() }}</td>
                                     <td>{{ $topic->replies->count() }}</td>
                                     <td>{{ $topic->last_reply_date() }}</td>

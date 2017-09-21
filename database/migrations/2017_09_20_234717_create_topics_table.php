@@ -15,10 +15,12 @@ class CreateTopicsTable extends Migration
     {
         Schema::create('topics', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->unsigned()->index();
 
             $table->string('title');
             $table->text('body');
 
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
