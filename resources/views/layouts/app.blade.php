@@ -31,7 +31,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <i class="fa fa-home" aria-hidden="true"></i> {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'PHP Test Task') }}
                     </a>
                 </div>
 

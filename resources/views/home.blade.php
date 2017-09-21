@@ -5,7 +5,11 @@
     <div class="row">
         <div class="col-md-12 ">
             <h1><i class="fa fa-list" aria-hidden="true"></i> Topic List</h1>
-            {{ $topics->links() }}
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</li>
+                </ol>
+            </div>
             <div class="panel panel-default">
                 <div class="panel-body">
                     @if (session('status'))
@@ -13,7 +17,6 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
 
                     <table class="table">
                         <thead>
