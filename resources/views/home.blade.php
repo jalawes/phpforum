@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 ">
-            <h1><i class="fa fa-list" aria-hidden="true"></i> Topic List</h1>
+            <h1>Topic List</h1>
             <div class="row">
                 <ol class="breadcrumb">
                     <li class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</li>
