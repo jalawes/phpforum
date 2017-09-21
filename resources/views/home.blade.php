@@ -8,14 +8,8 @@
             <ol class="breadcrumb">
                 <li class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</li>
             </ol>
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
                 <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
                     <table class="table">
                         <thead>
                             <tr>
