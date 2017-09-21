@@ -7,30 +7,25 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+
     /**
      * Create a new controller instance.
-     *
-     * @return void
      */
-    public function __construct()
-    {
+    public function __construct() {
         $this->middleware('auth');
     }
 
     /**
      * Show the application dashboard.
-     *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+    public function index() {
         $topics = Topic::all();
 
         return view('home', compact('topics'));
     }
 
-    public function show(Topic $topic)
-    {
+    public function show(Topic $topic) {
         return view('topic', compact('topic'));
     }
 }

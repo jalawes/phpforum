@@ -1,12 +1,11 @@
 <?php
 
+use App\Topic;
 use Faker\Generator as Faker;
 
-$factory->define(App\Topic::class, function (Faker $faker) {
-    static $password;
-
+$factory->define(Topic::class, function(Faker $faker) {
     return [
         'title' => $faker->realText(50, 2),
-        'body' => $faker->paragraph(4, true),
+        'body'  => $faker->paragraphs(3, true),
     ];
 });
