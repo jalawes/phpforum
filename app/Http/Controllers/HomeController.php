@@ -22,7 +22,7 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $topics = Topic::all();
+        $topics = Topic::paginate(10);
 
         return view('home', compact('topics'));
     }
